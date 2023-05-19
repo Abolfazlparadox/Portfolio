@@ -152,3 +152,43 @@ nav ul li a:hover::after{
     grid-gap: 40px;
     margin-top: 50px;
 }
+#myservise{
+    color: #fff;
+}
+.services-list div {
+    background: #262626;
+    padding: 40px;
+    font-size: 15px;
+    font-weight: 300;
+    border-radius: 10px;
+    color: #fff;
+    transition: background 0.5s, transform 0.5s;
+}
+.services-list div i{
+     font-size: 50px;
+     margin-bottom: 30px ;
+
+}
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+
+}
+.services-list div a {
+    text-decoration: none;
+    color: #fff ;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: 0.5s;
+}
+.services-list div a:hover{
+    color: #000000;
+    font-size: 18px;
+}
+.services-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+/* ----------portfolio---------- */
