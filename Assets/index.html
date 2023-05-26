@@ -18,16 +18,18 @@
     <div class="container">
         <nav>
             <img src="/Src/6466.png" class="logo">
-            <ul>
-                <li><a href="home">Home</a></li>
-                <li><a href="home">About</a></li>
-                <li><a href="home">Services</a></li>
-                <li><a href="home">Portfolio</a></li>
-                <li><a href="home">Contact</a></li>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#protfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class='bx bx-window-close' onclick="closemenu()" ></i>
             </ul>
+            <i class='bx bx-menu' onclick="openmenu()"></i>
         </nav>
         <div class="headr-text">
-            <p>software Enginerr, Fronted Developer 
+            <p>software Enginerr <br> Fronted Developer 
             </p>
             <h1>Hi, I'm <span>Abolfazl</span> <br> MohammadShahi From Iran </h1>  
         </div>  
@@ -134,7 +136,7 @@
     </div>
 </div>
 <!-- -----------------contact---------------------- -->
-<div class="contact">
+<div id="contact">
     <div class="container">
         <div class="row">
             <div class="contact-left">
@@ -152,12 +154,13 @@
                 <a href="/Src/ابوالفضل_mohammadshahi-en.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
-                <form>
+                <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Name" required>
-                    <input type="email" name="email" placeholder="Email">
-                    <textarea name="message" rows="6" placeholder="Message"></textarea>
+                    <input type="email" name="Email" placeholder="Email">
+                    <textarea name="Message" rows="6" placeholder="Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
+                <span id="msg"></span>
             </div>
         </div>
     </div>

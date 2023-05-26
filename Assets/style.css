@@ -6,6 +6,9 @@
     font-family: 'Roboto Condensed', sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: #000000;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23220000' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23440000' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23660000' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23880000' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23A00' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
@@ -121,7 +124,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #000000;
+    background: #ffffff;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -263,7 +266,7 @@ nav ul li a:hover::after{
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #262626;
+    color: #ffffff;
     transition: background 0.5s ease;
 }
 .btn:hover{
@@ -292,7 +295,7 @@ nav ul li a:hover::after{
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: #000000;
+    color: #ffffff;
     display: inline-block;
     transition: transform 0.5s ease;
 }
@@ -338,4 +341,85 @@ form .btn2{
 }
 .copyright i{
     color: #ff0000;
+}
+/* ------------------CSS FOR SMALL SCREEN ---------------------- */
+nav .bx{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    #header {
+        background-image: url(/Src/20230318_121223.jpg);
+    }
+    .headr-text {
+        margin-top: 100%;
+        font-size: 16px;
+        padding-left: -20px;
+    }
+    .headr-text h1{
+        font-size: 30px;
+        color: #ffffff;
+        
+    }
+    .headr-text p{
+       color: #ae0e0e;
+    }
+    nav .bx{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul {
+        background: #ae0e0e;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+    nav ul .bx{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .logo{
+        width: 120px;
+    }
+    .sub-title{
+        font-size: 30px;
+        color: #ae0e0e;
+    }
+    .about-col-1,.about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left h1{
+        color: #ffffff;
+    }
+    .contact-left p{
+        color: #ffffff;
+    }
+    .contact-left,.contact-right{
+        flex-basis: 100%;
+    }
+}
+#msg{
+    color: aliceblue;
+    margin-top: -40px;
+    display: block;
 }
